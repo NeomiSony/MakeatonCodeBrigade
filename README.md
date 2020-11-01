@@ -1,4 +1,4 @@
-# MakeatonCodeBrigade
+# Makeaton Hackathon
 
 ### by Team Code Brigade
 
