@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.part1 * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.part1 .btn {
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #2f323a;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+.part1 .btn.click {
+  left: 260px;
+}
+.part1 .btn span {
+  color: white;
+  font-size: 28px;
+  line-height: 45px;
+}
+.part1 .btn.click span:before {
+  content: "\f00d";
+}
+.part1 .sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+
+  background: #2f323a;
+  transition: left 0.4s ease;
+}
+.part1 .sidebar.show {
+  left: 0px;
+}
+.part1 .sidebar .text {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #2f323a;
+  letter-spacing: 1px;
+}
+.part1 nav ul {
+  background: #2f323a;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.part1 nav ul li {
+  line-height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.part1 nav ul li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.part1 nav ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+.part1 nav ul li.active a {
+  color: cyan;
+  background: #2f323a;
+  border-left-color: cyan;
+}
+.part1 nav ul li a:hover {
+  background: #2f323a;
+}
+.part1 nav ul ul {
+  position: static;
+  display: none;
+}
+.part1 nav ul .feat-show.show {
+  display: block;
+}
+.part1 nav ul .serv-show.show1 {
+  display: block;
+}
+.part1 nav ul ul li {
+  line-height: 42px;
+  border-top: none;
+}
+.part1 nav ul ul li a {
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 80px;
+}
+.part1 nav ul li.active ul li a {
+  color: #e6e6e6;
+  background: #2f323a;
+  border-left-color: transparent;
+}
+.part1 nav ul ul li a:hover {
+  color: cyan !important;
+  background: #2f323a !important;
+}
+.part1 nav ul li a span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+.part1 nav ul li a span.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.part1 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #202020;
+  z-index: -1;
+  text-align: center;
+}
+.part1 .content .header {
+  font-size: 45px;
+  font-weight: 600;
+}
+.part1 .content p {
+  font-size: 30px;
+  font-weight: 500;
+}

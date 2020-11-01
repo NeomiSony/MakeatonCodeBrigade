@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*------------Navigation----------------*/
+.deptHead {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  color: #2f323a;
+  font-size: 50px;
+  font-weight: 1000;
+}
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand img {
+  height: 60px;
+  padding-left: 30px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav li a {
+  float: right;
+  text-align: left;
+}
+
+#nav-bar ul li a:hover {
+  color: #007bff !important;
+}
+
+.navbar {
+  background: #fff;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Department list */
+.block-list .block-list__item {
+  min-height: 100px;
+  margin-bottom: 1rem;
+}
+.block-list {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: center;
+  height: 500px;
+  margin: 13px;
+}
+
+.block-list:after {
+  content: "";
+  -webkit-box-flex: 1;
+  flex: auto;
+}
+
+.block-list__item {
+  width: 25%;
+  box-sizing: border-box;
+  border-right: 10px solid white;
+  background-color: #9c91a794;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-list-3 .block-list__item {
+  width: 33.3%;
+}
+
+.block-list-3 .block-list__item:nth-child(3n) {
+  border: none;
+}
+
+.block-list-3 div:first-child {
+  background-image: url("images/engineering.jpg");
+  filter: blur(2px);
+  -webkit-filter: blur(0px);
+  background-position: center;
+  background-size: cover;
+}
+.block-list-3 div a {
+  font-size: 35px;
+  color: #fff!important;
+  text-decoration: none;
+}
+.block-list-3 div:nth-child(2) {
+  background-image: url("images/chemistry.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.block-list-3 div:nth-child(3) {
+  background-image: url("images/marine.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.block-list-3 div:nth-child(4) {
+  background-image: url("images/law.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.block-list-3 div:nth-child(5) {
+  background-image: url("images/ship.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.block-list-3 div:nth-child(6) {
+  background-image: url("images/biotech.jpg");
+  background-position: center;
+  background-size: cover;
+}

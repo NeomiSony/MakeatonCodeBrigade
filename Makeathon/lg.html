@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+    <title>Login</title>
+    <link  rel="stylesheet"  type="text/css" href="logss.css">
+    </link>
+     <script>
+  
+          function acctype() 
+          {
+             
+            if(document.loginform.username.value=="jessica") 
+            {    
+            
+                document.loginform.action = "ongoing.html";
+            } 
+            else 
+            {
+            
+                 document.loginform.action = "ongoingmen.html";
+            
+            }
+          }
+      
+              
+             
+
+      </script>
+
+</head>
+<body>
+   
+    <div class="login-box">
+        
+        <h1>Login </h1>
+        <form name="loginform" onsubmit="return acctype()">
+         username : <input type="text"  name="username" placeholder="please put your username here." /><br>
+         password : <input type="password" name="password" placeholder="your password here" /><br/>
+         <input type="submit" value="Login">
+        </form>
+        
+
+         
+                       
+            <a href="#">Forgot Password</a>
+    </div>
+    
+</body>
+</html>

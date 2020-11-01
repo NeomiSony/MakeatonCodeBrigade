@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Sidebar Menu with sub-menu | CodingNepal</title> -->
+    <link rel="stylesheet" href="engsidebarstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="csprojstyle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+   
+    <div class="part1">
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+<nav class="sidebar">
+      <div class="text">
+DOMAINS</div>
+<ul>
+  <li ><a href="demo.html">Home</a></li>
+  <li ><a href="engsidebar.html">All</a></li>
+<li ><a href="safety.html">Fire and Safety</a></li>
+<li>
+          <a href="#" class="feat-btn active">CS/IT
+            <span class="fas fa-caret-down first"></span>
+          </a>
+<ul class="feat-show">
+<li><a href="ml.html">Machine Learning</a></li>
+<li><a href="#">Data Science</a></li>
+<li><a href="#">Cybersecurity</a></li>
+<li><a href="#">Web Development</a></li>
+<li><a href="#">Mobile App Development</a></li>
+<li><a href="#">Blockchain</a></li>
+</ul>
+</li>
+<li>
+          <a href="#" class="serv-btn">ECE
+            <span class="fas fa-caret-down second"></span>
+          </a>
+ <ul class="serv-show">
+        <li><a href="#">Robotics</a></li>
+        <li><a href="#">IOT</a></li>
+        <li><a href="#">Cloud</a></li>
+            
+</ul>
+</li>
+<li><a href="#">Mechanical</a></li>
+<li><a href="#">Civil</a></li>
+<li><a href="#">EEE</a></li>
+
+</ul>
+</nav></div>
+<div class="projectsdiv row part2">
+  
+    <figure class="snip1519 col-md-3">
+      <figcaption><i class="ion-ios-paw-outline"></i>
+        <h3>Cartoonify Image with Machine Learning</h3>
+        <p>Build a python application that will transform an image into its cartoon using machine learning libraries.</p><a href="#" class="button">Read More</a>
+        <input
+          onclick="this.value='Applied'"
+          type="button"
+          value="Apply"
+          id="myButton1"
+          class="button"
+        />
+      </figcaption>
+    </figure>
+    <figure class="snip1519 col-md-3">
+      <figcaption><i class="ion-ios-flame-outline"></i>
+        <h3>Product landing page</h3>
+        <p>Develop a product landing page of a website </p><a href="#" class="button">Read More</a>
+        <input
+          onclick="this.value='Applied'"
+          type="button"
+          value="Apply"
+          id="myButton1"
+          class="button"
+        />
+      </figcaption>
+    </figure>
+    <figure class="snip1519 col-md-3">
+      <figcaption><i class="ion-ios-rose-outline"></i>
+        <h3>MNIST Digit Classification</h3>
+        <p>The MNIST digit classification python project enables machines to recognize handwritten digits.</p><a href="#" class="button">Read More</a>
+        <input
+          onclick="this.value='Applied'"
+          type="button"
+          value="Apply"
+          id="myButton1"
+          class="button"
+        />
+      </figcaption>
+    </figure>
+    <figure class="snip1519 col-md-3">
+      <figcaption><i class="ion-ios-rose-outline"></i>
+        <h3>Wine Quality Test</h3>
+        <p> Build an interface to predict the quality of the red wine.</p><a href="#" class="button">Read More</a>
+        <input
+          onclick="this.value='Applied'"
+          type="button"
+          value="Apply"
+          id="myButton1"
+          class="button"
+        />
+      </figcaption>
+    </figure>
+    <figure class="snip1519 col-md-3">
+      <figcaption><i class="ion-ios-rose-outline"></i>
+        <h3>Safe Folder App</h3>
+        <p>Copy and save folders and photos in this application with password security.</p><a href="#" class="button">Read More</a>
+        <input
+          onclick="this.value='Applied'"
+          type="button"
+          value="Apply"
+          id="myButton1"
+          class="button"
+        />
+      </figcaption>
+    </figure>
+    <figure class="snip1519 col-md-3">
+      <figcaption><i class="ion-ios-rose-outline"></i>
+        <h3>Text Steganography Project</h3>
+        <p>Steganography embeds a secret message inside an innocent looking cover medium, stealthily, without creating any attention.</p><a href="#" class="button">Read More</a>
+        <input
+          onclick="this.value='Applied'"
+          type="button"
+          value="Apply"
+          id="myButton1"
+          class="button"
+        />
+      </figcaption>
+    </figure>
+    
+    </div>
+<script>
+$(".hover").mouseleave(
+function() {
+  $(this).removeClass("hover");
+}
+);</script>
+      
+
+
+<script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>
