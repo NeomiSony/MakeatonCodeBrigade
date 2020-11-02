@@ -2,7 +2,7 @@
 
 ### by Team Code Brigade
 
-###Idea
+### Idea
 This is a portal for CUSAT students that aims to bridge the gap between the learning experience of students and the working environment. We have a  web application for providing easily accessible real world projects and a mentorship system where experts can monitor students. It also helps in connecting students with CUSAT alumni and mentors that can help them get referrals. 
 Therefore the platform makes students industry-ready , increases university  placement rates and companies can hire students skilled with their technologies.(Hack for CUSAT)
 
